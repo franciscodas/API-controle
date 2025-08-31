@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login / Cadastro</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="header">
+  <img onclick="entrar()" src="person.svg" alt="">
+  <h1>Login</h1>
+  </div>
+<div class="todo">
+  <h2>Entrar</h2>
+
+  <form id="login-form">
+    <input type="email" id="email-login" placeholder="E-mail" required />
+    <input type="password" id="senha-login" placeholder="Senha" required />
+    <button type="submit">Entrar</button>
+    <div class="fazer_login" onclick="fazer_cadastro()">Registrar</div>
+  </form>
+
+  <form id="register-form" class="registro">
+    <h2>Registrar</h2>
+    <input type="email" id="email-register" placeholder="E-mail para cadastro" required />
+    <input type="password" id="senha-register" placeholder="Senha (mínimo 5 caracteres)" required minlength="5" />
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <div id="msg"></div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

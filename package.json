@@ -1,0 +1,21 @@
+{
+  "name": "controle-estoque",
+  "version": "1.0.0",
+  "description": "API de controle de estoque com Node.js + Express + SQLite",
+  "main": "backend/serve.js",
+  "author": "Seu Nome <seuemail@exemplo.com>",
+  "scripts": {
+    "start": "node backend/serve.js",
+    "dev": "nodemon backend/serve.js"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7",
+    "express": "^4.19.2",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
