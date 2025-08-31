@@ -17,7 +17,7 @@ console.log(localStorage)
     const senha = document.getElementById('senha-login').value;
 
     try {
-      const res = await fetch('http://localhost:3000/auth/login', {
+      const res = await fetch('https://api-controle-2.onrender.com/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, senha }),
