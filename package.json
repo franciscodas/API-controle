@@ -6,7 +6,8 @@
   "author": "Seu Nome <seuemail@exemplo.com>",
   "scripts": {
     "start": "node backend/serve.js",
-    "dev": "nodemon backend/serve.js"
+    "dev": "nodemon backend/serve.js",
+    "postinstall": "npm rebuild sqlite3 --build-from-source"
   },
   "dependencies": {
     "sqlite3": "^5.1.7",
