@@ -3,7 +3,7 @@ const token = localStorage.getItem('token');
 if (!token) {
   window.location.href = "login.html";
 }
-const API_URL = "http://localhost:3000";
+const API_URL = "https://api-controle-2.onrender.com";
 
 const listaProdutos = document.getElementById('lista-produtos');
 const form = document.getElementById('form-produto');
